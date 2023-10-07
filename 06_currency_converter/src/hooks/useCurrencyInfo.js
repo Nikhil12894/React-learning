@@ -1,5 +1,9 @@
 import { useEffect, useState } from "react";
-
+/**
+ *
+ * @param {*} currency  takes currency code and returns the list for currency conversion rate data
+ * @returns
+ */
 function useCurrencyInfo(currency) {
   const [data, setData] = useState({});
   useEffect(() => {

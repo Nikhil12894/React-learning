@@ -1,0 +1,48 @@
+{
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "redhat.telemetry.enabled": true,
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
+    },
+    "explorer.confirmDelete": false,
+    "yaml.schemas": {
+        "kubernetes": "*.yaml",
+        "dockerComposeFile": "*.yaml"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true,
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 20,
+    "terminal.integrated.fontFamily": "monospace",
+    "workbench.colorCustomizations": {
+        "terminal.backsround": "#070707",
+        "terminal.selectionBackground": "#E07C24",
+        "terminal.selectionForeground": "#000000",
+        "tab.activeBorder": "#FFFFFF",
+        "tab.activeBackground": "#000000",
+        "tab.activeBorderTop": "#FFFFFF",
+        "tab.activeForeground": "#FFFFFF"
+    },
+    "editor.tokenColorCustomizations": {
+        "comments": "#80fce183"
+    },
+    "editor.codeActionsOnSave": {},
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Cobalt2",
+    "editor.fontFamily": "monospace",
+    "editor.wordWrap": "bounded"
+}

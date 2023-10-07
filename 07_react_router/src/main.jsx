@@ -12,8 +12,9 @@ import Layout from "./Layout.jsx";
 import Home from "./components/Home/Home.jsx";
 import About from "./components/About/About.jsx";
 import Contact from "./components/Contact/Contact.jsx";
-import Github from "./components/Github/Github.jsx";
+import Github, { githubInfo } from "./components/Github/Github.jsx";
 import User from "./components/User/User.jsx";
+//ANOTHER WAY
 // const router = createBrowserRouter([
 //   {
 //     path: "/",
@@ -24,31 +25,29 @@ import User from "./components/User/User.jsx";
 //         element: <Home />,
 //       },
 //       {
-//         path: "Home",
-//         element: <Home />,
-//       },
-//       {
-//         path: "About",
+//         path: "about",
 //         element: <About />,
 //       },
 //       {
-//         path: "Contact",
+//         path: "contact",
 //         element: <Contact />,
 //       },
 //       {
-//         path: "Github",
+//         path: "github",
 //         element: <Github />,
 //       },
 //     ],
 //   },
 // ]);
+//ANOTHER WAY
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route path="" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="github" element={<Github />} />
+      //USEFUL loader concept
+      <Route path="github" element={<Github />} loader={githubInfo} />
       <Route path="user/:userId" element={<User />} />
     </Route>
   )

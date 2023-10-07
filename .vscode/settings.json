@@ -30,7 +30,7 @@
     "terminal.integrated.fontFamily": "monospace",
     "workbench.colorCustomizations": {
         "terminal.backsround": "#070707",
-        "terminal.selectionBackground": "#E07C24",
+        "terminal.selectionBackground": "#c3f7a7ee",
         "terminal.selectionForeground": "#000000",
         "tab.activeBorder": "#FFFFFF",
         "tab.activeBackground": "#000000",

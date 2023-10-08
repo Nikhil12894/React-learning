@@ -42,7 +42,7 @@
     },
     "editor.codeActionsOnSave": {},
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Cobalt2",
+    "workbench.colorTheme": "Default Dark Modern",
     "editor.fontFamily": "monospace",
     "editor.wordWrap": "bounded",
     "todo-tree.highlights.defaultHighlight": {

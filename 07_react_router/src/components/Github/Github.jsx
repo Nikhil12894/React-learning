@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 function Github() {
   const data = useLoaderData();
-  //ANOTHER WAY
+  //ANOTHER WAY to load data on navigation
 
   // const [data, setData] = useState([]);
   // useEffect(() => {

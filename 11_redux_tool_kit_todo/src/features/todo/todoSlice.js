@@ -24,12 +24,13 @@ export const todoSlice = createSlice({
     updateTodo: (state, action) => {
       state.todos.map((t) =>
         t.id === action.payload.id
-          ? { ...action.payload.todo, text: action.payload.todo.text }
+          ? { ...action.payload.todo, text: action.payload.text }
           : t
       );
     },
     todoCompleted: (state, action) => {
-      state.todos.map((t) =>
+      console.log(action.payload);
+      state.todos = state.todos.map((t) =>
         t.id === action.payload ? { ...t, complete: !t.complete } : t
       );
     },

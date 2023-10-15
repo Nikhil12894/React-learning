@@ -7,6 +7,7 @@ export class AppWrite {
   account;
 
   constructor() {
+    console.log(config);
     this.client
       .setEndpoint(config.APPWRITE_URL)
       .setProject(config.APPWRITE_PROJECT_ID);

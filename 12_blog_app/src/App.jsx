@@ -26,7 +26,6 @@ function App() {
         <Header />
         <main>
           <h1 className="text-4xl">Hello world</h1>
-          <BlogCardOne />
         </main>
         <Footer />
       </div>

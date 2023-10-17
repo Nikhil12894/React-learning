@@ -2,10 +2,8 @@ import { useState, useEffect } from "react";
 import { login, logout } from "./store/AuthSlice";
 import { useDispatch } from "react-redux";
 import appwriteService from "./appwrite/auth";
-import { Footer, Header } from "./components";
+import { BlogCardOne, Footer, Header } from "./components";
 import { Outlet } from "react-router-dom";
-import BlogCardOne from "./components/pages/BlogCardOne";
-import Container from "./components/Container/Container";
 function App() {
   const [loading, setLoading] = useState(true);
   const dispatcher = useDispatch();
@@ -27,14 +25,8 @@ function App() {
       <div className="w-full block">
         <Header />
         <main>
-          <Container>
-            {/* //TODO: <Outlet /> */}
-            <BlogCardOne />
-            <BlogCardOne />
-            <BlogCardOne />
-            <BlogCardOne />
-            <BlogCardOne />
-          </Container>
+          <h1 className="text-4xl">Hello world</h1>
+          <BlogCardOne />
         </main>
         <Footer />
       </div>

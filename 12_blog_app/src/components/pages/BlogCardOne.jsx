@@ -5,29 +5,68 @@ const BlogCardOne = ({ blog = {} }) => {
     blog.cardColor ? blog.cardColor : "pink"
   );
   useEffect(() => {
+    /* const tailwindBg =
+      "bg-slate-500/10" |
+      "bg-gray-500/10" |
+      "bg-zinc-500/10" |
+      "bg-neutral-500/10" |
+      "bg-stone-500/10" |
+      "bg-orange-500/10" |
+      "bg-amber-500/10" |
+      "bg-yellow-500/10" |
+      "bg-lime-500/10" |
+      "bg-green-500/10" |
+      "bg-emerald-500/10" |
+      "bg-teal-500/10" |
+      "bg-cyan-500/10" |
+      "bg-blue-500/10" |
+      "bg-violet-500/10" |
+      "bg-purple-500/10" |
+      "bg-fuchsia-500/10" |
+      "bg-pink-500/10" |
+      "bg-bg-rose-500/10";
+    "bg-slate-500/20" |
+      "bg-gray-500/20" |
+      "bg-zinc-500/20" |
+      "bg-neutral-500/20" |
+      "bg-stone-500/20" |
+      "bg-orange-500/20" |
+      "bg-amber-500/20" |
+      "bg-yellow-500/20" |
+      "bg-lime-500/20" |
+      "bg-green-500/20" |
+      "bg-emerald-500/20" |
+      "bg-teal-500/20" |
+      "bg-cyan-500/20" |
+      "bg-blue-500/20" |
+      "bg-violet-500/20" |
+      "bg-purple-500/20" |
+      "bg-fuchsia-500/20" |
+      "bg-pink-500/20" |
+      "bg-bg-rose-500/20"; */
     const colors = [
-      "Slate",
-      "Gray",
-      "Zinc",
-      "Neutral",
-      "Stone",
-      "Orange",
-      "Amber",
-      "Yellow",
-      "Lime",
-      "Green",
-      "Emerald",
-      "Teal",
-      "Cyan",
-      "Blue",
-      "Violet",
-      "Purple",
-      "Fuchsia",
-      "Pink",
-      "Rose",
+      "slate",
+      "gray",
+      "zinc",
+      "neutral",
+      "stone",
+      "orange",
+      "amber",
+      "yellow",
+      "lime",
+      "green",
+      "emerald",
+      "teal",
+      "cyan",
+      "blue",
+      "violet",
+      "purple",
+      "fuchsia",
+      "pink",
+      "rose",
     ];
     const color = colors[Math.floor(Math.random() * colors.length)];
-    setCardColor(color.toLowerCase());
+    setCardColor(color);
   });
 
   return (
@@ -66,6 +105,7 @@ const BlogCardOne = ({ blog = {} }) => {
           </div>
         </div>
       </div>
+      {/* <div className={tailwindBg}></div> */}
     </div>
   );
 };

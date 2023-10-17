@@ -46,7 +46,7 @@ export class AppWrite {
     try {
       await this.account.deleteSessions();
     } catch (err) {
-      console.error("Appwrite service :: logout :: error", err);
+      throw `Appwrite service :: logout :: error, ${err}`;
     }
   }
   async getCurrentUser() {

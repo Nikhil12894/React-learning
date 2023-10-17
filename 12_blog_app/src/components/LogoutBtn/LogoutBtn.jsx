@@ -6,9 +6,18 @@ import { logout } from "../../store/AuthSlice";
 function LogoutBtn() {
   const dispatch = useDispatch();
   const logoutHandler = () => {
-    authService.logout().then(() => {
-      dispatch(logout());
-    });
+    authService
+      .logout()
+      .then(() => {
+        dispatch(logout());
+      })
+      .catch((err) => {
+        console.error(err);
+      })
+      .finally(() => {
+        //TODO:
+        // Redirect to signIn or Home
+      });
   };
   return (
     <button

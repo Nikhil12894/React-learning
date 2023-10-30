@@ -1,5 +1,5 @@
 import config from "../config/config";
-import { Client, ID, Storage, Databases } from "appwrite";
+import { Client, ID, Storage, Databases, Query } from "appwrite";
 
 export class Service {
   client = new Client();
@@ -15,8 +15,8 @@ export class Service {
   async createPost({ title, slug, content, featuredImage, status, userId }) {
     try {
       return await this.databases.createDocument(
-        conf.appwriteDatabaseId,
-        conf.appwriteCollectionId,
+        config.APPWRITE_DB_ID,
+        config.APPWRITE_COLLECTION_ID,
         slug,
         {
           title,
@@ -34,8 +34,8 @@ export class Service {
   async updatePost(slug, { title, content, featuredImage, status }) {
     try {
       return await this.databases.updateDocument(
-        conf.appwriteDatabaseId,
-        conf.appwriteCollectionId,
+        config.APPWRITE_DB_ID,
+        config.APPWRITE_COLLECTION_ID,
         slug,
         {
           title,
@@ -52,8 +52,8 @@ export class Service {
   async deletePost(slug) {
     try {
       await this.databases.deleteDocument(
-        conf.appwriteDatabaseId,
-        conf.appwriteCollectionId,
+        config.APPWRITE_DB_ID,
+        config.APPWRITE_COLLECTION_ID,
         slug
       );
       return true;
@@ -66,8 +66,8 @@ export class Service {
   async getPost(slug) {
     try {
       return await this.databases.getDocument(
-        conf.appwriteDatabaseId,
-        conf.appwriteCollectionId,
+        config.APPWRITE_DB_ID,
+        config.APPWRITE_COLLECTION_ID,
         slug
       );
     } catch (error) {
@@ -79,8 +79,8 @@ export class Service {
   async getPosts(queries = [Query.equal("status", "active")]) {
     try {
       return await this.databases.listDocuments(
-        conf.appwriteDatabaseId,
-        conf.appwriteCollectionId,
+        config.APPWRITE_DB_ID,
+        config.APPWRITE_COLLECTION_ID,
         queries
       );
     } catch (error) {
@@ -94,7 +94,7 @@ export class Service {
   async uploadFile(file) {
     try {
       return await this.bucket.createFile(
-        conf.appwriteBucketId,
+        config.APPWRITE_BUCKET_ID,
         ID.unique(),
         file
       );
@@ -106,7 +106,7 @@ export class Service {
 
   async deleteFile(fileId) {
     try {
-      await this.bucket.deleteFile(conf.appwriteBucketId, fileId);
+      await this.bucket.deleteFile(config.APPWRITE_BUCKET_ID, fileId);
       return true;
     } catch (error) {
       console.log("Appwrite serive :: deleteFile :: error", error);
@@ -115,7 +115,7 @@ export class Service {
   }
 
   getFilePreview(fileId) {
-    return this.bucket.getFilePreview(conf.appwriteBucketId, fileId);
+    return this.bucket.getFilePreview(config.APPWRITE_BUCKET_ID, fileId);
   }
 }
 

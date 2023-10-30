@@ -1,0 +1,62 @@
+[
+    {
+        "title": "test title",
+        "content": "The Spring Cloud Data Flow server uses Spring Cloud Deployer, to deploy data pipelines made of Spring Cloud Stream or Spring Cloud Task applications onto modern platforms such as Cloud Foundry and Kubernetes.",
+        "featuredImage": "/books.jpeg",
+        "status": null,
+        "postId": 23,
+        "createdAt": "2023-10-29 10:45",
+        "createdBy": "Nalin Kumar",
+        "userAvatar": "./avtar.jpeg"
+      },
+      {
+        "title": "test title",
+        "content": "A selection of pre-built stream and task/batch starter apps for various data integration and processing scenarios facilitate learning and experimentation.",
+        "featuredImage": "/books.jpeg",
+        "status": null,
+        "postId": 24,
+        "createdAt": "2023-10-29 10:45",
+        "createdBy": "Nalin Kumar",
+        "userAvatar": "./avtar.jpeg"
+      },
+      {
+        "title": "test title",
+        "content": "Custom stream and task applications, targeting different middleware or data services, can be built using the familiar Spring Boot style programming model.",
+        "featuredImage": "/books.jpeg",
+        "status": null,
+        "postId": 25,
+        "createdAt": "2023-10-29 10:45",
+        "createdBy": "Nalin Kumar",
+        "userAvatar": "./avtar.jpeg"
+      },
+      {
+        "title": "test title",
+        "content": "A simple stream pipeline DSL makes it easy to specify which apps to deploy and how to connect outputs and inputs. The composed task DSL is useful for when a series of task apps require to be run as a directed graph.",
+        "featuredImage": "/books.jpeg",
+        "status": null,
+        "postId": 26,
+        "createdAt": "2023-10-29 10:45",
+        "createdBy": "Nalin Kumar",
+        "userAvatar": "./avtar.jpeg"
+      },
+      {
+        "title": "test title",
+        "content": "The dashboard offers a graphical editor for building data pipelines interactively, as well as views of deployable apps and monitoring them with metrics using Wavefront, Prometheus, Influx DB, or other monitoring systems.",
+        "featuredImage": "/books.jpeg",
+        "status": null,
+        "postId": 27,
+        "createdAt": "2023-10-29 10:45",
+        "createdBy": "Nalin Kumar",
+        "userAvatar": "./avtar.jpeg"
+      },
+      {
+        "title": "test title",
+        "content": " The Spring Cloud Data Flow server exposes a REST API for composing and deploying data pipelines. A separate shell makes it easy to work with the API from the command line.",
+        "featuredImage": "/books.jpeg",
+        "status": null,
+        "postId": 28,
+        "createdAt": "2023-10-29 10:45",
+        "createdBy": "Nalin Kumar",
+        "userAvatar": "./avtar.jpeg"
+      }
+  ]

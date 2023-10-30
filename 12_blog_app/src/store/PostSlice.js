@@ -6,6 +6,9 @@ const initialState = {
   featuredImage: null,
   status: null,
   postId: null,
+  createdAt: null,
+  createdBy: null,
+  userAvatar: null,
 };
 
 const postSlice = createSlice({

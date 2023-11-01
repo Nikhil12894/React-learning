@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const BlogCardTwo = ({ blogs = [] }) => {
   function firstHundredWords(postContent) {
     return postContent?.substring(0, 150) + " ...";
@@ -33,12 +33,12 @@ const BlogCardTwo = ({ blogs = [] }) => {
                             {blog.createdAt}
                           </span>
                         </div>
-                        <a
-                          href="#"
+                        <Link
+                          to={`/post/${blog.postId}`}
                           className="text-lg sm:text-xl font-semibold  text-gray-600 dark:text-slate-200 block"
                         >
                           {firstHundredWords(blog.content)}
-                        </a>
+                        </Link>
                         <div className="flex flex-wrap justify-between mt-auto">
                           <div className="flex items-center">
                             <div className="w-8 h-8 rounded">
@@ -49,14 +49,15 @@ const BlogCardTwo = ({ blogs = [] }) => {
                               />
                             </div>
                             <div className="ml-2">
-                              <a
+                              <Link
+                                to={`/post/${blog.postId}`}
                                 tabIndex="0"
                                 className="cursor-pointer hover:text-gray-500 focus:text-gray-500 text-gray-800 dark:text-gray-100 focus:outline-none focus:underline"
                               >
                                 <h5 className=" font-medium text-sm">
                                   {blog.createdBy}
                                 </h5>
-                              </a>
+                              </Link>
                               <p
                                 tabIndex="0"
                                 className="focus:outline-none text-gray-500 dark:text-gray-400 text-xs font-medium"
@@ -65,8 +66,8 @@ const BlogCardTwo = ({ blogs = [] }) => {
                               </p>
                             </div>
                           </div>
-                          <a
-                            href="#"
+                          <Link
+                            to={`/post/${blog.postId}`}
                             className="block text-slate-500 dark:text-slate-400 hover:text-slate-600 underline decoration-1 decoration-dashed underline-offset-4  decoration-primary-500 font-medium  focus:outline-none self-center"
                           >
                             Read More{" "}
@@ -74,7 +75,7 @@ const BlogCardTwo = ({ blogs = [] }) => {
                               data-lucide="arrow-right"
                               className="self-center inline-block ms-1 h-4 w-4"
                             ></i>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

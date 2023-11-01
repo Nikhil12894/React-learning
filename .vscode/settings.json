@@ -160,6 +160,7 @@
     "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS).*(\\n\\s*//\\s{2,}.*)*",
     "cSpell.language": "en",
     "cSpell.words": [
-        "APPWRITE"
+        "APPWRITE",
+        "signup"
     ]
 }
